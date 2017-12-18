@@ -4,6 +4,8 @@
   "dependencies": {
     "@rails/webpacker": "^3.2.0",
     "babel-preset-react": "^6.24.1",
+    "element-react": "^1.4.5",
+    "element-theme-default": "^1.4.12",
     "prop-types": "^15.6.0",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
