@@ -1,0 +1,46 @@
+default: &default
+  adapter: mysql2
+  encoding: utf8
+  pool: 5
+
+local: &local
+  <<: *default
+  username: root
+  password:
+  host: localhost
+  database: birdy-scc
+
+remote_stg: &remote_stg
+  <<: *default
+  host: 192.168.100.126
+  port: 3306
+  database: htscrm_portal
+  username: htscrm
+  password: p4763FFs
+
+development: &development
+  <<: *<%= ENV['SCRM_DB'] || :local %>
+  port: 3306
+
+test:
+  <<: *development
+  username: htscrm_test
+  password: eM8836Wg
+  database: htscrm_portal_test
+
+staging:
+  <<: *development
+  host: mysql
+  port: 3306
+  username: htscrm
+  password: p4763FFs
+  database: htscrm_portal
+
+production:
+  <<: *development
+  host: mysql
+  port: 3306
+  username: htscrm
+  password: p4763FFs
+  database: htscrm_portal
+
