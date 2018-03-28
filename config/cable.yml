@@ -1,10 +1,17 @@
-development:
-  adapter: async
+# development:
+#   adapter: async
 
-test:
-  adapter: async
+# test:
+#   adapter: async
 
-production:
-  adapter: redis
-  url: redis://localhost:6379/1
-  channel_prefix: birdy-react_production
+# production:
+#   adapter: redis
+#   url: redis://localhost:6379/1
+#   channel_prefix: birdy-react_production
+
+local: &local
+  url: redis://localhost:6379
+
+development: *local
+test: *local
+
