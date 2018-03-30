@@ -14,15 +14,14 @@ default: &default
   cache_manifest: false
 
   extensions:
-    - .coffee
-    - .erb
-    - .js
     - .jsx
-    - .ts
-    - .vue
+    - .js
     - .sass
     - .scss
     - .css
+    - .module.sass
+    - .module.scss
+    - .module.css
     - .png
     - .svg
     - .gif
@@ -37,8 +36,8 @@ development:
   dev_server:
     https: false
     host: localhost
-    port: 3036
-    public: localhost:3036
+    port: 3035
+    public: localhost:3035
     hmr: false
     # Inline should be set to true if using HMR
     inline: true

@@ -2,17 +2,19 @@
   "name": "birdy-react",
   "private": true,
   "dependencies": {
-    "@rails/webpacker": "^3.2.0",
+    "@rails/webpacker": "^3.4.1",
     "antd": "^3.3.0",
     "babel-preset-react": "^6.24.1",
     "element-react": "^1.4.5",
     "element-theme-default": "^1.4.12",
-    "prop-types": "^15.6.0",
+    "prop-types": "^15.6.1",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
-    "react_ujs": "^2.4.3"
+    "react-infinite-scroller": "^1.1.3",
+    "react_ujs": "^2.4.4",
+    "reqwest": "^2.0.5"
   },
   "devDependencies": {
-    "webpack-dev-server": "^2.9.7"
+    "webpack-dev-server": "2.11.2"
   }
 }
