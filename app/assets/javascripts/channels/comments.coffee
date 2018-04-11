@@ -9,6 +9,7 @@ App.comments = App.cable.subscriptions.create "CommentsChannel",
     , 1000
 
   received: (data) ->
+    console.log data
     @collection().append(data.comment) unless @userIsCurrentUser(data.comment)
 
   userIsCurrentUser: (comment) ->
