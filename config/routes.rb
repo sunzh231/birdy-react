@@ -9,5 +9,7 @@ Rails.application.routes.draw do
     resources :comments
   end
 
-  root 'examples#index'
+  resource :chats
+
+  root 'welcome#index'
 end
